@@ -254,3 +254,93 @@
       grid-template-columns: 1fr;
     }
   }
+
+  @media (max-width: 768px) {
+    .author-image {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .testimonial-author {
+      align-items: flex-start;
+    }
+    
+    .author-info h4 {
+      font-size: 1rem;
+    }
+    
+    .author-info span {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Fix for navbar on small devices */
+@media (max-width: 576px) {
+  .main-nav {
+    padding: 0.5rem 1rem;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .nav-toggle {
+    width: 25px;
+    height: 18px;
+  }
+  
+  /* Improve readability of text */
+  p {
+    font-size: 0.95rem;
+  }
+  
+  /* Adjust form elements for better touch interaction */
+  input, 
+  select, 
+  textarea, 
+  button {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+    padding: 12px;
+  }
+  
+  /* Improve button touch targets */
+  .btn {
+    padding: 12px 20px;
+    min-height: 44px; /* Minimum recommended touch target size */
+  }
+  
+  /* Fix services layout */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  /* Improve form layout on very small screens */
+  @media (max-width: 360px) {
+    .booking-form {
+      grid-template-columns: 1fr;
+    }
+    
+    .form-group.full-width {
+      grid-column: span 1;
+    }
+  }
+}
+
+/* Fix for testimonials section */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: var(--spacing-md);
+  }
+  
+  .testimonial-author {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .author-image {
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+  }
+}

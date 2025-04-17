@@ -386,3 +386,26 @@
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
 }
+
+.curved-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 1;
+  pointer-events: none; /* Ensures divider doesn't interfere with clicks */
+}
+
+.curved-divider.top {
+  top: 0;
+  bottom: auto;
+  transform: rotate(180deg);
+}
+
+/* Ensure sections have proper positioning */
+section {
+  position: relative;
+  overflow: hidden; /* Keep dividers contained */
+}
