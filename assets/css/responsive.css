@@ -1,0 +1,256 @@
+/* =====================================
+   PARKSIDE PET GROOMING - RESPONSIVE STYLES
+   ===================================== */
+
+/* ---------- Large devices (desktops, less than 1200px) ---------- */
+@media (max-width: 1200px) {
+    h1 {
+      font-size: 3rem;
+    }
+    
+    h2 {
+      font-size: 2.2rem;
+    }
+    
+    .hero-text h1 {
+      font-size: 3.5rem;
+    }
+    
+    .circle-image-1 {
+      width: 350px;
+      height: 350px;
+    }
+    
+    .circle-image-2 {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  /* ---------- Medium devices (tablets, less than 992px) ---------- */
+  @media (max-width: 992px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .hero-text {
+      margin: 0 auto var(--spacing-xl);
+      max-width: 100%;
+    }
+    
+    .hero-cta {
+      justify-content: center;
+    }
+    
+    .hero-visual {
+      width: 100%;
+      height: 400px;
+    }
+    
+    .circle-image-1 {
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .about-content {
+      flex-direction: column;
+    }
+    
+    .about-text {
+      order: 2;
+    }
+    
+    .about-image {
+      order: 1;
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .booking-content {
+      flex-direction: column;
+    }
+    
+    .booking-info {
+      margin-top: var(--spacing-xl);
+    }
+    
+    .before-after-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+      gap: var(--spacing-lg);
+    }
+    
+    .footer-logo {
+      text-align: center;
+    }
+    
+    .footer-column h4::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .footer-column {
+      text-align: center;
+    }
+  }
+  
+  /* ---------- Small devices (landscape phones, less than 768px) ---------- */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    h2 {
+      font-size: 2rem;
+    }
+    
+    h3 {
+      font-size: 1.5rem;
+    }
+    
+    .hero-text h1 {
+      font-size: 2.8rem;
+    }
+    
+    .circle-image-1 {
+      width: 300px;
+      height: 300px;
+    }
+    
+    .circle-image-2 {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .nav-menu {
+      position: fixed;
+      top: 0;
+      right: -300px;
+      width: 300px;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--light);
+      box-shadow: var(--shadow-lg);
+      transition: all var(--transition-normal);
+      z-index: 999;
+      padding: var(--spacing-xl) 0;
+    }
+    
+    .nav-menu.active {
+      right: 0;
+    }
+    
+    .nav-menu li {
+      margin: var(--spacing-md) 0;
+    }
+    
+    .nav-toggle {
+      display: flex;
+      z-index: 1000;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+    
+    .booking-form {
+      grid-template-columns: 1fr;
+    }
+    
+    .form-group.full-width {
+      grid-column: span 1;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      gap: var(--spacing-md);
+      text-align: center;
+    }
+    
+    .footer-legal {
+      justify-content: center;
+    }
+  }
+  
+  /* ---------- Extra small devices (portrait phones, less than 576px) ---------- */
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 2.2rem;
+    }
+    
+    h2 {
+      font-size: 1.8rem;
+    }
+    
+    h3 {
+      font-size: 1.4rem;
+    }
+    
+    .hero-text h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero-text p {
+      font-size: 1.1rem;
+    }
+    
+    .hero-cta {
+      flex-direction: column;
+      gap: var(--spacing-sm);
+    }
+    
+    .hero-visual {
+      height: 350px;
+    }
+    
+    .circle-image-1 {
+      width: 250px;
+      height: 250px;
+    }
+    
+    .circle-image-2 {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .about-stats {
+      flex-direction: column;
+    }
+    
+    .stat {
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .before-after-slider {
+      height: 300px;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .groomers-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .contact-info {
+      grid-template-columns: 1fr;
+    }
+  }

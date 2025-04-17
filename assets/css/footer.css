@@ -1,0 +1,119 @@
+/* =====================================
+   PARKSIDE PET GROOMING - FOOTER STYLES
+   ===================================== */
+
+/* ---------- Footer ---------- */
+.footer {
+    background-color: var(--primary-dark);
+    color: var(--light);
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .footer-logo {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .footer-logo img {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .footer-links {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xl);
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-column h4 {
+    margin-bottom: var(--spacing-md);
+    color: var(--light);
+    position: relative;
+    padding-bottom: var(--spacing-sm);
+  }
+  
+  .footer-column h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent);
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .footer-column ul li a {
+    color: var(--light);
+    opacity: 0.8;
+    transition: all var(--transition-normal);
+  }
+  
+  .footer-column ul li a:hover {
+    opacity: 1;
+    padding-left: var(--spacing-sm);
+  }
+  
+  .hours-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .hours-list li span {
+    font-weight: 600;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+  }
+  
+  .footer-legal {
+    display: flex;
+    gap: var(--spacing-md);
+  }
+  
+  .footer-legal a {
+    color: var(--light);
+    opacity: 0.8;
+  }
+  
+  .footer-legal a:hover {
+    opacity: 1;
+  }
+  
+  .credit {
+    opacity: 0.8;
+  }
+  
+  .credit a {
+    color: var(--accent);
+    font-weight: 600;
+  }
